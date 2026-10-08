@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "maxanger-mobile",
+    "name": "maxanger",
     "slug": "maxanger-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/maxanger_icon.png",
     "scheme": "maxangermobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -19,7 +19,9 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.maxoncheeg.maxanger",
+      "usesCleartextTraffic": true
     },
     "web": {
       "output": "static",
@@ -27,6 +29,9 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "@lovesworking/watermelondb-expo-plugin-sdk-52-plus"
+      ],
       [
         "expo-splash-screen",
         {
@@ -43,6 +48,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "389d2cc9-1e2c-4fed-b7e5-8d8583b79ac5"
+      }
     }
   }
 }
